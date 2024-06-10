@@ -1,11 +1,9 @@
-<p align="center"><a href="https://thecodexo.com" target="_blank" rel="noopener noreferrer"><img width="250" src="https://github.com/kalanakt/Pyrogram-Telegram-Bot-Template/blob/main/pic/logo_transparent_1100x300.png" alt="Code xo logo"></a></p>
+<h2>Cảm ơn vì đã sử dụng tôi 💖. Đây là một số ví dụ về mongo db</h2>
 
-<h2>Thank you for using me 💖. Here are some examples of mongo db</h2>
+<em>MongoDB là một cơ sở dữ liệu tài liệu với khả năng mở rộng và tính linh hoạt mà bạn muốn với việc truy vấn và lập chỉ mục mà bạn cần</em>
 
-<em>MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need</em>
-
-<h3>Create a collection called "users"</h3>
-<em>you should import pymongo library and <strong>DATABASE URL</strong></em>
+<h3>Tạo một bộ sưu tập được gọi là "users"</h3>
+<em>Bạn nên nhập thư viện pymongo và <strong>DATABASE URL</strong></em>
 <br><br>
 
 ```
@@ -22,8 +20,8 @@ mycol = mydb["users"]
 
 ```
 
-<h3>Insert Into Collection</h3>
-<em>Adding new user to "users" database</em>
+<h3>Chèn vào bộ sưu tập</h3>
+<em>Thêm người dùng mới vào "users" database</em>
 
 ```
 
@@ -44,8 +42,8 @@ x = mycol.insert_one(mydict)
 
 ```
 
-<h3>Filter the Result</h3>
-<em>Find User from "users" database.</em>
+<h3>Lọc kết quả</h3>
+<em>Tìm người dùng từ "users" database.</em>
 
 ```
 
@@ -69,8 +67,8 @@ for x in mydoc:
   
 ```
 
-<h3>Delete Document</h3>
-<em>Delete User from "users" database.</em>
+<h3>Xóa tài liệu</h3>
+<em>Xóa người dùng khỏi "users" database.</em>
 
 ```
 
@@ -91,8 +89,8 @@ mycol.delete_one(myquery)
 
 ```
 
-<h3>Update Collection</h3>
-<em>Update User Details from "users" database.</em>
+<h3>Cập nhật bộ sưu tập</h3>
+<em>Cập nhật chi tiết người dùng từ "users" database.</em>
 
 ```
 

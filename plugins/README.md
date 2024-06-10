@@ -1,23 +1,21 @@
-<p align="center"><a href="https://thecodexo.com" target="_blank" rel="noopener noreferrer"><img width="250" src="https://github.com/kalanakt/Pyrogram-Telegram-Bot-Template/blob/main/pic/logo_transparent_1100x300.png" alt="Code xo logo"></a></p>
+<h2>Cảm ơn vì đã sử dụng tôi 💖. Đây là một số ví dụ về việc gửi tin nhắn qua bot telegram</h2>
 
-<h2>Thank you for using me 💖. Here are some examples of sending a message via a telegram bot</h2>
-
-<h3>Sending reply text when someone starts the bot.</h3>
-<em>If someone starts your bot or sends /start command in chat you can use this to send a reply to it. also, you can use this method for other commands</em>
+<h3>Gửi tin nhắn trả lời khi ai đó bắt đầu bot.</h3>
+<em>Nếu ai đó khởi động bot của bạn hoặc gửi /start trong cuộc trò chuyện bạn có thể sử dụng cái này để gửi thư trả lời nó. Ngoài ra, bạn có thể sử dụng phương pháp này cho các lệnh khác</em>
 <br><br>
 
 ```
 @Client.on_message(filters.command("start"))
 async def start(bot, cmd):
 ```
-* <p>You can use filters to identify user commands. </p>
+* <p>Bạn có thể sử dụng các bộ lọc để xác định các lệnh của người dùng. </p>
 
 ```
 @Client.on_message(filters.command("start") & filters.incoming & ~filters.edited & filters.private)
 async def start(bot, cmd):
 ```
 
-* <p>You can also add text to the keyboard. We will talk about that, keep reading ...</p>
+* <p>Bạn cũng có thể thêm văn bản vào bàn phím. Chúng ta sẽ nói về điều đó, tiếp tục đọc ...</p>
 
 ```
 @Client.on_message(filters.command("start") & filters.private)
@@ -30,10 +28,6 @@ async def start(bot, command):
                 [
                     InlineKeyboardButton("🔮Help", callback_data='help_cb'),
                     InlineKeyboardButton("⚔About", callback_data='about_cb')
-                ],
-                [
-                    InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/kinu6'),
-                    InlineKeyboardButton("⚙️Update Channel", url="https://t.me/TMWAD")
                 ]
             ]
         )
@@ -41,8 +35,8 @@ async def start(bot, command):
 ```
 
 <br><br>
-<h3>Sending reply photo with caption when someone starts the bot.</h3>
-<em>add your photo url. it should end with .jpg or .jpeg</em>
+<h3>Gửi ảnh trả lời có chú thích khi ai đó khởi động bot.</h3>
+<em>Thêm url ảnh của bạn. nó sẽ kết thúc bằng .jpg hoặc .jpeg</em>
 <br><br>
 
 ```
@@ -57,10 +51,6 @@ async def start(bot, command):
                 [
                     InlineKeyboardButton("🔮Help", callback_data='help_cb'),
                     InlineKeyboardButton("⚔About", callback_data='about_cb')
-                ],
-                [
-                    InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/kinu6'),
-                    InlineKeyboardButton("⚙️Update Channel", url="https://t.me/TMWAD")
                 ]
             ]
         )
@@ -68,4 +58,4 @@ async def start(bot, command):
     
 ```
 
-* <p> Check <a href="https://docs.pyrogram.org/api/bound-methods/Message.reply">this</a> For learn more about reply method</p>
+* <p> Kiểm tra <a href="https://docs.pyrogram.org/api/bound-methods/Message.reply">tài liệu này</a> để tìm hiểu thêm về phương pháp trả lời</p>

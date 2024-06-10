@@ -1,44 +1,42 @@
-# Pyrogram Telegram Python Bot Template
+# Mẫu Pyrogram Telegram Python Bot
 
-This is a template for creating Telegram bots using Pyrogram, MongoDB, and Python.
+Đây là một mẫu để tạo bot Telegram bằng cách sử dụng Pyrogram, MongoDB và Python.
 
-## Getting Started
+## Bắt đầu
 
-### Prerequisites
-
+### Điều kiện tiên quyết
 - Python 3.7 or higher
 - Pyrogram library
 - MongoDB
 
-### Installing
+### Cài đặt
 
-1. Clone the repository:
+1. Nhân bản kho lưu trữ:
 
    ```bash
-   git clone https://github.com/kalanakt/Pyrogram-Telegram-Bot-Template telegrambot
-   cd telegrambot
+   git clone https://github.com/iamritiensinh/PyrogramBot
+   cd PyrogramBot
    ```
 
-2. Install the dependencies:
+3. Cài đặt các phụ thuộc:
 
-   
    ```bash
-   #optional
+   #Không bắt buộc
    python3 -m venv env
-   source env/bin/activate # in mac OS
-   env/Scripts/activate.bat #In CMD
-   env/Scripts/Activate.ps1 #In Powershel
+   source env/bin/activate # mac OS
+   env/Scripts/activate.bat # CMD
+   env/Scripts/Activate.ps1 # Powershel
    ```
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Set up your MongoDB database and get the connection URI.
+4. Thiết lập cơ sở dữ liệu MongoDB của bạn và lấy URI kết nối.
 
-5. Create a `.env` file in the project root and add your MongoDB connection URI and your Telegram bot token:
+5. Tạo tệp `.env` trong thư mục gốc của dự án và thêm URI kết nối MongoDB và mã thông báo bot Telegram của bạn:
 
-   ```plaintext
+   ```
    DATABASE_URI=your-mongodb-connection-uri
    DATABASE_NAME=your-database-name
    API_ID=your-api-id
@@ -46,22 +44,22 @@ This is a template for creating Telegram bots using Pyrogram, MongoDB, and Pytho
    BOT_TOKEN=your-bot-token
    ```
 
-6. Run the bot:
+6. Chạy bot:
 
    ```bash
    python bot.py
    ```
 
-## Features
+## Các tính năng
 
-- Pyrogram framework for interacting with the Telegram API.
-- MongoDB for storing data.
-- Easily extendable for adding more features.
+- Khung Pyrogram để tương tác với Telegram API.
+- MongoDB để lưu trữ dữ liệu.
+- Dễ dàng mở rộng để thêm nhiều tính năng hơn.
 
-## Contributing
+## Đóng góp
 
-Contributions are welcome! Please follow the standard guidelines when contributing.
+Đóng góp được hoan nghênh! Vui lòng làm theo các hướng dẫn tiêu chuẩn khi đóng góp.
 
-## License
+## Giấy phép
 
-This project is licensed under the MIT [License](LICENSE).
+Dự án này được cấp phép theo MIT [License](LICENSE).

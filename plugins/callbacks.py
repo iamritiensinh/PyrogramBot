@@ -18,15 +18,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
     if query.data == "help_cb":
         buttons = [
           [
-            InlineKeyboardButton("⚔About", callback_data='about_cb'),
-            InlineKeyboardButton("⚡Back", callback_data='start_cb')
+            InlineKeyboardButton("Thông tin", callback_data='about_cb'),
+            InlineKeyboardButton("Quay lại", callback_data='start_cb')
           ],
           [
-            InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/kinu6'),
-            InlineKeyboardButton("⚙️Update Channel", url="https://t.me/TMWAD")
+            InlineKeyboardButton("Chủ sở hữu", url='https://t.me/iamthayrio'),
+            InlineKeyboardButton("Mã nguồn", url="https://github.com/iamritiensinh/PyrogramBot")
           ],
           [
-            InlineKeyboardButton("🧿Close", callback_data='close')
+            InlineKeyboardButton("Đóng", callback_data='close')
           ]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -39,15 +39,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about_cb":
         buttons = [
           [
-            InlineKeyboardButton("🔮Help", callback_data='help_cb'),
-            InlineKeyboardButton("⚡Back", callback_data='start_cb')
+            InlineKeyboardButton("Trợ giúp", callback_data='help_cb'),
+            InlineKeyboardButton("Quay lại", callback_data='start_cb')
           ],
           [
-            InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/kinu6'),
-            InlineKeyboardButton("⚙️Update Channel", url="https://t.me/TMWAD")
-          ],
-          [
-            InlineKeyboardButton("🧿Close", callback_data='close')
+            InlineKeyboardButton("Đóng", callback_data='close')
           ]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -60,12 +56,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start_cb":
         buttons = [
           [
-            InlineKeyboardButton("🔮Help", callback_data='help_cb'),
-            InlineKeyboardButton("⚔About", callback_data='about_cb')
-          ],
-          [
-            InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/kinu6'),
-            InlineKeyboardButton("⚙️Update Channel", url="https://t.me/TMWAD")
+            InlineKeyboardButton("Trợ giúp", callback_data='help_cb'),
+            InlineKeyboardButton("Thông tin", callback_data='about_cb')
           ]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
